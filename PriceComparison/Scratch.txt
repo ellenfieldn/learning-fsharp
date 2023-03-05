@@ -1,0 +1,27 @@
+;
+    {
+        Name="Insta360";
+        Url = "https://store.insta360.com/product/link";
+        Selector = "meta[property='product:price:amount']"
+    }; 
+
+
+;
+    {
+        Name="BHPhoto";
+        Url = "https://www.bhphotovideo.com/c/product/1719900-REG/insta360_cinstbj_a_link_4k_ai_webcam.html";
+        Selector = ".price_L0iytPTSvv"
+    }
+
+
+{
+        Name="Walmart";
+        Url = "https://www.walmart.com/ip/65IQFFG4ADYC?irgwc=1&sourceid=imp_W-ZzhgU33xyNWouwIoQAUS1GUkAUxy0giyULzA0&veh=aff&wmlspartner=imp_118767&clickid=W-ZzhgU33xyNWouwIoQAUS1GUkAUxy0giyULzA0&sharedid=&affiliates_ad_id=565706&campaign_id=9383";
+        Selector = "div[itemprop='price']"
+    };
+
+{
+        Name="Adorama";
+        Url = "https://www.adorama.com/insta360l.html";
+        Selector = ".your-price"
+    }]
