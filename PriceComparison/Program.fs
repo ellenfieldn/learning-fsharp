@@ -18,8 +18,14 @@ let GetPrice store =
     price
 
 [<EntryPoint>]
-let main argv =
-    let fileContents = File.ReadAllText("input.json")
+let main args =
+    let filename = 
+        match args with
+        | [| |] -> "input.json"
+        | [| filename |] -> filename
+        | _ -> failwithf "Expected 1 commandline arguments, but got %i arguments" args.Length
+
+    let fileContents = File.ReadAllText(filename)
     let stores = Json.deserialize fileContents
 
     let offers = 
